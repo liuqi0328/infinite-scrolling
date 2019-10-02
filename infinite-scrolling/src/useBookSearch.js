@@ -7,7 +7,7 @@ export default function useBookSearch(query, pageNumber) {
   const [books, setBooks] = useState([]);
   const [hasMore, setHasMore] = useState(false);
 
-  // Prevent to contain previously entered keyword(s) in the search results
+  // Prevent to contain previously entered keyword(s)/query in the search results
   useEffect(() => {
     setBooks([])
   }, [query])
